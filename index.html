@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ELEVATION</title>
-
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
@@ -26,20 +25,38 @@
     <header>
       <img src="./assets/logo.png" class="header-logo" />
       <nav class="header-nav">
-        <a class="header-nav__link" href="#">Content Catalog</a>
-        <ul class="content-catalog__ul">
-          <li class="content_catalog__li">Data</li>
-          <li class="content_catalog__li">R&D</li>
-          <li class="content_catalog__li">Digital Marketing</li>
-          <li class="content_catalog__li">Talent</li>
-        </ul>
-        <a class="header-nav__link" href="#">Our Solutions</a>
+        <div class="header-nav__link-container">
+          <a class="header-nav__link" href="#">Content Catalog</a>
+          <ul class="content-catalog__ul">
+            <li class="content-catalog__li">Data</li>
+            <li class="content-catalog__li">R&D</li>
+            <li class="content-catalog__li">Digital Marketing</li>
+            <li class="content-catalog__li">Talent</li>
+          </ul>
+        </div>
+        <div class="header-nav__link-container">
+          <a class="header-nav__link" href="#">Our Solutions</a>
+          <ul class="content-catalog__ul">
+            <li class="content-catalog__li">Employees Training</li>
+            <li class="content-catalog__li">Train To Hire</li>
+            <li class="content-catalog__li">ESG / Impact</li>
+          </ul>
+        </div>
+
         <a class="header-nav__link" href="#">About</a>
         <a class="header-nav__link" href="#">Blog</a>
         <a class="header-nav__link" href="#">Hiring Partners</a>
         <a class="header-nav__link" href="#">Join Elevation</a>
       </nav>
-      <img src="./assets/en-icon.png" class="header-flag" />
+      <div class="header-flag__flags-container">
+        <img src="./assets/en-icon.png" class="header-flag" />
+        <ul class="content-catalog__ul">
+          <li class="content-catalog__li"><img src="./assets/en-icon.png" class="header-flag" />English</li>
+          <li class="content-catalog__li"><img src="./assets/il-icon.png" class="header-flag" />Hebrew</li>
+          <li class="content-catalog__li"><img src="./assets/de-icon.png" class="header-flag" />Deutsch</li>
+        </ul>
+      </div>
+
     </header>
 
     <main class="main">
@@ -54,14 +71,13 @@
         <div class="academy__slider">
           <div class="academy__slider-item">
             <div class="academy__review _review">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              consequuntur nulla pariatur est nam!
+              “<b>Thanks to Elevation</b> our successful <b>reskilling program</b> was announced as the <b>winner of Israel's National HR awards 2020</b>”
             </div>
             <div class="academy__review-person">
               <div class="academy__review-person-img"></div>
-              <div class="academy__review-person-name">Lorem, ipsum.</div>
+              <div class="academy__review-person-name">Michal Bari</div>
               <div class="academy__review-person-position">
-                Lorem ipsum dolor sit amet consectetur.
+                Bank Hapoalim Campus, BH Bank
               </div>
             </div>
           </div>

@@ -3,8 +3,9 @@
   line-height: 1em;
   letter-spacing: 0.4px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 22px;
 }
+
 
 /* general styles */
 ._h1 {
@@ -127,40 +128,78 @@ header {
   white-space: nowrap;
 }
 
-.header-flag {
+.header-flag__flags-container{
   grid-area: header-flag;
-  margin-top: 6px;
+}
+.header-flag__flags-container:hover .content-catalog__ul {
+  display:block;
+  position: absolute;
+  background-color: white;
+  padding: 0;
+  margin: 35px 0;
 }
 
+.header-flag {padding-right: 5px;}
+
+
+
 .header-nav__link:first-child,
-.header-nav__link:nth-child(3) {
+.header-nav__link:nth-child(2) {
   padding-right: 21px;
   width: fit-content;
 }
 
 .header-nav__link:first-child::after,
-.header-nav__link:nth-child(3)::after {
+.header-nav__link:nth-child(2)::after {
   content: "";
   display: block;
   height: 6px;
-  border-top: 1px solid black;
+  border-top: 1px solid #FF96AA;
   position: absolute;
   top: 7%;
   left: 93%;
   width: 6px;
-  border-left: 1px solid black;
+  border-left: 1px solid #FF96AA;
   transform: rotate(-135deg);
 }
 
-.header-nav__link:first-child:hover .content-catalog__ul:first-child {
+.header-nav__link-container:first-child:hover .content-catalog__ul{
   display: block;
   position: absolute;
+  background-color: white;
+  padding: 0;
+  margin: 35px 0;
+}
+
+.header-nav__link-container:nth-child(2):hover .content-catalog__ul{
+  display: block;
+  position: absolute;
+  background-color: white;
+  padding: 0;
+  margin: 35px 0;
+}
+
+.header-nav__link-container {
+
 }
 
 .content-catalog__ul {
   display: none;
+  list-style: none;
 }
-.content_catalog__li {
+.content-catalog__li {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:#FF96AA;
+  background-color: white;
+  border: 1px solid #FFF7F9;
+  white-space: nowrap;
+  text-align: left;
 }
 /* academy */
 
@@ -184,24 +223,36 @@ header {
 
 .academy__button {
   margin: 69px 5px 0;
+  color:  white;
 }
 
 .academy__slider {
-  padding: 1px 65px 46px 0;
+  padding: 26px 65px 46px 0;
+  position: relative;
+}
+
+.academy__slider::after {
+  content: "";
+  background-image: url(./assets/symbol-1.png);
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  height: 60px;
+  width: 61px;
 }
 
 .academy__slider-item {
-  background-color: #fdf7f9;
-  height: 292px;
+  height: 290px;
+  background-color: #FDF7F9;
+  padding: 25px 57px;
 }
 
 .academy__review {
-  margin: 50px 57px 0px 60px;
 }
 
 .academy__review-person {
   height: 74px;
-  padding: 40px 0 0 103px;
+  padding: 14px 0 0 46px;
 }
 
 .academy__review-person-img {
