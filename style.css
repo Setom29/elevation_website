@@ -7,6 +7,13 @@
   border-radius: 5px 5px 5px 5px;
 }
 
+a {
+  cursor: pointer;
+  display: block;
+  border: 0;
+  text-decoration: none;
+}
+
 
 /* general styles */
 ._h1 {
@@ -63,6 +70,7 @@
   font-weight: 600;
   line-height: 1.2em;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 ._btn {
@@ -78,11 +86,16 @@
   background-color: #ff96a9;
   border-radius: 35px;
   border: none;
+  cursor: pointer;
 }
 
 .wrapper {
   margin: 0 auto;
   max-width: 1210px;
+}
+
+.navigation-arrow {
+  cursor: pointer;
 }
 
 /* nav */
@@ -111,7 +124,7 @@ header {
   grid-template-columns: repeat(6, auto);
   gap: 3.8%;
   text-align: center;
-  height: fit-content;
+  height: 50px;
 }
 
 .header-nav__link {
@@ -137,10 +150,10 @@ header {
   position: absolute;
   background-color: white;
   padding: 0;
-  margin: 35px 0;
+  margin: 25px 0;
 }
 
-.header-flag {padding-right: 5px;border-radius: 0;}
+.header-flag {padding-right: 5px;border-radius: 0;cursor: pointer;}
 
 
 
@@ -169,7 +182,7 @@ header {
   position: absolute;
   background-color: white;
   padding: 0;
-  margin: 35px 0;
+  margin: 25px 0;
 }
 
 .header-nav__link-container:nth-child(2):hover .content-catalog__ul{
@@ -178,7 +191,7 @@ header {
   z-index: 1;
   background-color: white;
   padding: 0;
-  margin: 35px 0;
+  margin: 25px 0;
 }
 
 .header-nav__link-container {
@@ -206,7 +219,7 @@ header {
 /* academy */
 
 .academy {
-  margin-top: 140px;
+  margin-top: 112px;
   display: grid;
   grid-template-columns: 45% auto;
   height: 361px;
@@ -237,8 +250,8 @@ header {
   content: "";
   background-image: url(./assets/symbol-1.png);
   position: absolute;
-  right: 30px;
-  bottom: 0px;
+  right: 29px;
+  bottom: 1px;
   height: 60px;
   width: 61px;
   background-size: contain;
@@ -255,13 +268,13 @@ header {
 
 .academy__review-person {
   height: 74px;
-  padding: 14px 0 0 46px;
+  padding: 14px 0 0 48px;
 }
 
 .academy__review-person-img {
   background-image: url(./assets/roundimg1.jpg);
-  width: 74px;
-  height: 73px;
+  width: 70px;
+  height: 71px;
   float: left;
   border-radius: 50px;
   background-size: cover;
@@ -270,8 +283,7 @@ header {
 }
 
 .academy__review-person-name {
-  margin: 20px 0 0 93px;
-
+  margin: 20px 0 0 91px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.5em;
@@ -279,7 +291,7 @@ header {
 }
 
 .academy__review-person-position {
-  margin: 0px 0 0 94px;
+  margin: 0px 0 0 91px;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.1em;
@@ -290,7 +302,7 @@ header {
 
 .partners {
   width: 465px;
-  margin-top: 111px;
+  margin-top: 110px;
 }
 
 .partners__title {
@@ -319,7 +331,7 @@ header {
 .video__container {
   background-color: #102441;
   width: 100%;
-  height: 581px;
+  height: 582px;
   margin-top: 152px;
   border-radius: 0;
 }
@@ -335,7 +347,10 @@ header {
 /* goals */
 
 .goals {
-  margin-top: 80px;
+  margin: 0 auto;
+  padding: 80px 195px;
+  background-color: #F4F8FC;
+  width: 100%;
 }
 .wrapper {
 }
@@ -360,6 +375,7 @@ header {
 }
 .goals__slider-item {
   height: 350px;
+  background-color: #FFFFFF;
 }
 .goals__slider-item-icon {
   height: 100px;
@@ -395,7 +411,7 @@ header {
 /* slider-navigation */
 
 .goals__slider-navigation {
-  margin-top: 32px;
+  margin-top: 22px;
   padding: 0px 21px;
   display: grid;
   grid-template: 1fr / auto 1fr auto;
@@ -408,7 +424,7 @@ header {
   grid-template: 8px / 8px 8px 8px;
   gap: 10px;
   line-height: 1;
-  margin-top: 8px;
+  margin-top: 18px;
   justify-self: center;
 }
 .goals__slider-navigation__dot {
@@ -419,6 +435,7 @@ header {
   padding: 0;
   border: none;
   background-color: #a9b8d3;
+  cursor: pointer;
 }
 .goals__slider-navigation__dot_active {
   background-color: #0f213a;
@@ -436,7 +453,7 @@ header {
 .goals__view-button {
   height: 58px;
   width: fit-content;
-  padding: 0 20px;
+  padding: 20px 20px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1em;
@@ -468,7 +485,8 @@ header {
 
 .leaders {
   max-width: 1180px;
-  margin-top: 24px;
+  width: 100%;
+  margin-top: 25px;
   background-image: url(./assets/leaders_bg.jpg);
   height: 237px;
   padding-top: 29px;
@@ -491,7 +509,7 @@ header {
 }
 .leaders__button {
   text-align: center;
-  margin: 40px auto 0;
+  margin: 41px auto 0;
   width: 152px;
   height: 62px;
   color: white;
@@ -530,6 +548,7 @@ header {
   height: 406px;
   overflow: hidden;
   max-width: 380px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
 }
 
 .events__card:last-child .events__card-img {
@@ -557,14 +576,18 @@ header {
   border-radius: 20px;
   background-color: #ff96aa;
   color: white;
+  cursor: default;
 }
 .events__card-img {
   width: 100%;
   height: 252px;
   border-radius: 0;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  border: 0 solid #69727d;
+  transition: all .25s;
 }
 .events__card-title {
-  margin: 17px auto 0;
+  margin: 16px auto 0;
   padding: 0 29px;
   font-size: 20px;
   font-weight: bold;
@@ -583,6 +606,7 @@ header {
   margin: 60px auto 0;
   padding: 81px 0 0px;
   max-width: 1600px;
+  width: 100%;
   background-color: #fdf7f9;
   height: 410px;
 }
