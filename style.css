@@ -15,7 +15,6 @@ a {
   text-decoration: none;
 }
 
-
 /* general styles */
 ._h1 {
   letter-spacing: 0.3px;
@@ -79,15 +78,20 @@ a {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2em;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.5px;
   width: 163px;
   text-align: center;
-  padding-top: 20px;
   height: 64px;
   background-color: #ff96a9;
   border-radius: 35px;
   border: none;
   cursor: pointer;
+}
+
+._btn:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 .wrapper {
@@ -127,37 +131,44 @@ header {
   gap: 3.8%;
   text-align: center;
   height: 50px;
+  color: #ff96aa;
 }
 
 .header-nav__link {
   display: block;
-
   font-size: 17px;
   font-weight: 500;
   line-height: 1em;
   letter-spacing: 1px;
-  color: #ff96aa;
+  color: inherit;
   text-decoration: none;
   margin-top: 3px;
   position: relative;
   width: fit-content;
   white-space: nowrap;
+  transition: 0.4s;
 }
 
-.header-flag__flags-container{
+.header-nav__link:hover {
+  color: #ff5172;
+}
+
+.header-flag__flags-container {
   grid-area: header-flag;
 }
 .header-flag__flags-container:hover .content-catalog__ul {
-  display:block;
+  display: block;
   position: absolute;
   background-color: white;
   padding: 0;
   margin: 25px -31px;
 }
 
-.header-flag {padding-right: 5px;border-radius: 0;cursor: pointer;}
-
-
+.header-flag {
+  padding-right: 5px;
+  border-radius: 0;
+  cursor: pointer;
+}
 
 .header-nav__link:first-child,
 .header-nav__link:nth-child(2) {
@@ -170,16 +181,21 @@ header {
   content: "";
   display: block;
   height: 6px;
-  border-top: 1px solid #FF96AA;
+  border-top: 1px solid #ff96aa;
   position: absolute;
   top: 7%;
   left: 93%;
   width: 6px;
-  border-left: 1px solid #FF96AA;
+  border-left: 1px solid #ff96aa;
   transform: rotate(-135deg);
 }
-
-.header-nav__link-container:first-child:hover .content-catalog__ul{
+.header-nav__link-container {
+  color: #ff96aa;
+}
+.header-nav__link-container:hover {
+  color: #ff5172;
+}
+.header-nav__link-container:first-child:hover .content-catalog__ul {
   display: block;
   position: absolute;
   background-color: white;
@@ -187,17 +203,13 @@ header {
   margin: 25px 0;
 }
 
-.header-nav__link-container:nth-child(2):hover .content-catalog__ul{
+.header-nav__link-container:nth-child(2):hover .content-catalog__ul {
   display: block;
   position: absolute;
   z-index: 1;
   background-color: white;
   padding: 0;
   margin: 25px 0;
-}
-
-.header-nav__link-container {
-
 }
 
 .content-catalog__ul {
@@ -213,11 +225,18 @@ header {
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-  color:#FF96AA;
+  color: #ff96aa;
   background-color: white;
-  border: 1px solid #FFF7F9;
+  border: 1px solid #fff7f9;
   white-space: nowrap;
   text-align: left;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.content-catalog__li:hover {
+  color: #ff5172;
+  background-color: #fff7f9;
 }
 /* academy */
 
@@ -241,7 +260,12 @@ header {
 
 .academy__button {
   margin: 69px 5px 0;
-  color:  white;
+  color: white;
+  padding: 20px 30px 20px 30px;
+}
+
+.academy__button:hover {
+  background-color: #ffbbc8;
 }
 
 .academy__slider {
@@ -262,7 +286,7 @@ header {
 
 .academy__slider-item {
   height: 290px;
-  background-color: #FDF7F9;
+  background-color: #fdf7f9;
   padding: 25px 57px;
 }
 
@@ -352,7 +376,7 @@ header {
 .goals {
   margin: 0 auto;
   padding: 80px 195px;
-  background-color: #F4F8FC;
+  background-color: #f4f8fc;
   width: 100%;
 }
 .wrapper {
@@ -378,7 +402,7 @@ header {
 }
 .goals__slider-item {
   height: 350px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .goals__slider-item-icon {
   height: 100px;
@@ -466,14 +490,28 @@ header {
 .goals__view-buttons-first {
   background-color: #0f213a;
 }
+
+.goals__view-buttons-first:hover {
+  background-color: #7a8cad;
+}
+
 .goals__view-buttons-second {
   background-color: #ff96aa;
+}
+.goals__view-buttons-second:hover {
+  background-color: #ffbbc8;
 }
 .goals__view-buttons-third {
   background-color: #247dff;
 }
+.goals__view-buttons-third:hover {
+  background-color: #82b5ff;
+}
 .goals__view-buttons-fourth {
   background-color: #a9b8d3;
+}
+.goals__view-buttons-fourth:hover {
+  background-color: #d9e0ec;
 }
 
 /* train-team img */
@@ -493,9 +531,15 @@ header {
   background-image: url(./assets/leaders_bg.jpg);
   height: 237px;
   padding-top: 29px;
-  background-position: 0px -275px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.5s ease-in;
+}
+.leaders:hover {
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: center/cover linear-gradient(90deg, #0f213a, #0f213a) no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: all 0.5s ease-in;
 }
 .leaders__title {
   color: white;
@@ -516,6 +560,7 @@ header {
   width: 152px;
   height: 62px;
   color: white;
+  padding: 20px 15px;
 }
 
 /* events */
@@ -552,6 +597,11 @@ header {
   overflow: hidden;
   max-width: 380px;
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  transition: all 0.25s;
+}
+
+.events__card:hover {
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 15%);
 }
 
 .events__card:last-child .events__card-img {
@@ -581,14 +631,31 @@ header {
   color: white;
   cursor: default;
 }
+.events__card-img-link {
+  position: relative;
+}
+.events__card-img-link::after {
+  display: block;
+  content: "";
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), transparent 75%);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
 .events__card-img {
   width: 100%;
   height: 252px;
   border-radius: 0;
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
   border: 0 solid #69727d;
-  transition: all .25s;
+  transition: all 0.25s;
 }
+
 .events__card-title {
   margin: 16px auto 0;
   padding: 0 29px;
@@ -717,9 +784,9 @@ header {
 .program__item-link {
   margin-top: 44px;
   line-height: 39px;
-  border-bottom: 1px solid #FF96AA;
+  border-bottom: 1px solid #ff96aa;
   width: 147px;
-  color: #FF96AA;
+  color: #ff96aa;
   border-radius: 0;
 }
 .programs__slider-navigation {
@@ -745,4 +812,9 @@ header {
   color: white;
   padding: 27px 0 0 10px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.programs__slider-navigation-arrow:hover {
+  background-color: #a9b8d3;
 }
