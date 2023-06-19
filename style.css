@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-size: 22px;
   border-radius: 5px 5px 5px 5px;
+  max-width: 1600px;
 }
 
 a {
@@ -116,6 +117,7 @@ header {
   grid-area: header-logo;
   background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(./assets/logo.png);
 }
 
 .header-nav {
@@ -150,7 +152,7 @@ header {
   position: absolute;
   background-color: white;
   padding: 0;
-  margin: 25px 0;
+  margin: 25px -31px;
 }
 
 .header-flag {padding-right: 5px;border-radius: 0;cursor: pointer;}
@@ -201,6 +203,7 @@ header {
 .content-catalog__ul {
   display: none;
   list-style: none;
+  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 7%);
 }
 .content-catalog__li {
   font-size: 16px;
@@ -332,7 +335,7 @@ header {
   background-color: #102441;
   width: 100%;
   height: 582px;
-  margin-top: 152px;
+  margin-top: 144px;
   border-radius: 0;
 }
 
@@ -533,7 +536,7 @@ header {
   text-align: center;
 }
 .events__subtitle {
-  margin-top: 59px;
+  margin-top: 60px;
   color: #ff96aa;
 }
 .events__cards {
@@ -735,10 +738,11 @@ header {
 
 .programs__slider-navigation-arrow {
   position: relative;
-  display: block;
   height: 53px;
   width: 29px;
   border-radius: 20px;
   background-color: #0f213a;
   color: white;
+  padding: 27px 0 0 10px;
+  cursor: pointer;
 }
